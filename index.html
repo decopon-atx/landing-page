@@ -1092,67 +1092,6 @@
             transform: translate(-50%, -50%);
         }
 
-
-        /* ENHANCED MOBILE RESPONSIVENESS */
-        @media (max-width: 480px) {
-            .hero {
-                padding: 80px 15px 60px;
-                min-height: 70vh;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-                margin-bottom: 15px;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-                margin-bottom: 25px;
-            }
-            
-            .cta-button {
-                padding: 16px 35px;
-                font-size: 1rem;
-                min-height: 48px; /* Touch target size */
-            }
-            
-            .header-cta {
-                padding: 12px 18px;
-                font-size: 0.85rem;
-                min-height: 44px;
-            }
-            
-            .container {
-                padding: 0 15px;
-            }
-            
-            .gallery {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-            
-            .form-group input,
-            .form-group textarea {
-                padding: 15px;
-                font-size: 16px; /* Prevents zoom on iOS */
-            }
-        }
-        
-        @media (max-width: 375px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .cta-button {
-                padding: 14px 25px;
-                font-size: 0.95rem;
-            }
-            
-            .container {
-                padding: 0 10px;
-            }
-        }
-
         /* Hide floating elements on mobile for performance */
         @media (max-width: 768px) {
             .floating-elements {
@@ -1256,7 +1195,7 @@
         <div class="container">
             <h2 data-aos="fade-up">Most Team Activities Are <em>Forgettable</em></h2>
             <p style="text-align: center; max-width: 700px; margin: 0 auto 20px; font-size: 1.1em; color: #666;" data-aos="fade-up" data-aos-delay="100">
-                Another escape room. Another paint night. Another TopGolf outing that costs $75/person and leaves nothing behind.
+                Another escape room. Another paint night. Another TopGolf outing that costs $90+ per person and leaves nothing behind.
             </p>
 
             <div class="problems-grid">
@@ -1422,7 +1361,7 @@
                     <div class="price">$750</div>
                     <p class="price-description">for up to 10 people</p>
                     <p><strong>Includes:</strong> All supplies, 90-min facilitation, setup & cleanup, group photos</p>
-                    <p style="margin-top: 15px; font-size: 0.9em; color: #999;">That's $75/person, less than TopGolf with something to keep forever</p>
+                    <p style="margin-top: 15px; font-size: 0.9em; color: #999;">That's $75/person, far less than TopGolf ($90+) with something to keep forever</p>
                 </div>
                 <div class="pricing-box" data-aos="fade-up" data-aos-delay="350">
                     <h3>Additional Guests</h3>
@@ -1554,20 +1493,6 @@
     <!-- Initialize AOS + Counter Animation -->
     <script>
         // Initialize AOS
-        /* Mobile touch improvements */
-        @media (hover: none) and (pointer: coarse) {
-            .cta-button:hover,
-            .header-cta:hover {
-                transform: none; /* Disable hover animations on touch devices */
-            }
-            
-            .cta-button:active,
-            .header-cta:active {
-                transform: scale(0.98);
-                transition: transform 0.1s;
-            }
-        }
-
         AOS.init({
             duration: 800,
             easing: 'ease-out-cubic',
