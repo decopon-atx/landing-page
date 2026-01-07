@@ -1,0 +1,463 @@
+FUNNEL SURFING DEMO & INTERVIEW TRANSCRIPT
+Vibe Marketing Challenge Winner - Drew
+
+All right, today we have Drew here from the Vibe Marketers community, and he is the winner
+of our very first Vibe Marketing Challenge.
+He won $1,000 for the workflow he's about to show today, and we're going to have him
+walk it through us live here on video.
+But Drew, give us a quick intro, tell us who you are, where you're from, and what you're
+all about.
+Sure, yeah.
+Quick intro.
+My name is Drew.
+I get really excited.
+I won the competition.
+I was not expecting it, but pretty and for that, and I appreciate you for putting together
+the community.
+It's been awesome to hear from everybody and just learn from the community.
+My background is I'm an engineer by trade, I work in labs, and not really much to do
+with marketing at all.
+So I kind of learn all this marketing and like Vibe Marketing, Vibe coding on the side.
+So my background is I work in like tech, basically, and we do simulations for real world environments.
+So if you're picturing, like if you take a GoPro to Alaska and the snow and then going
+to hot tub, we simulate like the stress that puts onto that device.
+So kind of not related at all to Vibe Marketing, so it's something I'm just passionate about.
+I really like to learn about technology, code, and the way it can apply to business in
+the future.
+So I'll be quick.
+I level about me real quick.
+Awesome.
+I love it that you're totally outside of the marketing world in an engineering field,
+and you're coming into kind of the Vibe Marketing and the Vibe coding space and doing something
+completely different there.
+I think that's super cool.
+And I'm sure that with how technical your 9 to 5 is picking up on all of this is fairly
+straightforward for you.
+Honestly, it's still challenging, but like it's, I've always been a tinker, I've always
+learned to like just love the process of learning too.
+So it's just more of a challenge of learning it and how to apply tech.
+So it's like a challenge still, but it's still something I'm committed and like really
+like to learn about.
+Awesome.
+Awesome.
+So you built funnel surfing to get started.
+Why don't you kind of tell us like how you came up with the concept for your build for
+the challenge, give us a high level run through, and then we'll get into a demo.
+Sure.
+Yeah, funnel surfing basically helps you analyze landing pages and email funnels.
+So I built this for people that are looking to like go into entrepreneurship field, but
+not might not know or have the resources to build their own professional landing pages
+or marketing funnels.
+And another aspect I saw is on X, I see a lot of people building landing pages that seems
+to be like what we first built more Vibe coding and just getting into learning how to code
+is building landing pages.
+So I thought it would help by building something to even to be able to analyze that and just
+see how you rank and see how other landing pages are.
+So you can use that as reference to cool.
+So essentially you've built kind of like a competitive spy tool that go and look at landing
+pages, funnels, follow-up sequences, all of that, and take a beginner and give them
+sort of like an idea or a map or a way to go and build their own funnel, which is super
+cool.
+And I think that one of the big gaps with a lot of folks getting started is they don't
+know what questions to ask and they don't know what good looks like when going out there
+and building.
+So if your tool can help them shortcut that process to understand those things and then
+they can just go and get to work and start vibing on building out their first funnel or whatever
+that is, I think that's super valuable and can save people a lot of time.
+Yeah.
+No, I think it's been valuable for me.
+It's like something I actually wanted to learn and use myself too.
+And yeah, it's been cool and the feedback has been pretty great too.
+I was able to get users already, which thanks to you, I think you announced it and I
+have like a hundred people on here that signed up already, which is insane to me.
+Wait, what?
+Where did you get yours from from the community?
+I think the community and I posted about it on X2, so I haven't really advertised it at
+all, but I have like, yeah, I'll show you on here too.
+I think around 95 people on here.
+That's unreal.
+Are you judging yet?
+No, it's all free.
+Like I put a post on X, just basically like use my credits just to get feedback.
+So you'll see on here, I have a way to like kind of like incentivize giving me feedback
+and I would just curious to see if people would use it and it's been kind of a cool response
+to see and kind of unreal to be honest.
+That's incredible.
+This might turn into like a really solid business for you like a side hustle or whatever.
+I think that's so amazing.
+A hundred users already, like, you know, if you go out on X and stuff and go into kind
+of like the building public, you know, chats and communities and all that, like people
+are struggling to get a hundred users.
+That's a major milestone.
+Yes, it's wild.
+And I like literally didn't expect it and I'll have I created a dashboard in here just
+to see like myself like the process and how people are using it so I'll show you that
+as well.
+Pretty crazy.
+Amazing.
+Amazing.
+Well, without further ado, let's let's see what funnel surfing is all about.
+Let's let's get a demo from from you, the creator.
+All right, let's check it out.
+All right.
+So the first thing we'll just start off with is this dashboard.
+So I've already kind of captured a few different emails and landing pages.
+So kind of just go skip through this part.
+But the first thing I see people using it for is landing page funnel.
+So if we do this link right here for analyze landing pages, you can drop in a link and
+I'll analyze landing pages.
+So if I click this, one of the things I wanted to do was make it more of a I call it like
+a swipe book for landing pages.
+So you've never heard of a swipe book.
+It's a way to get inspiration and just save things like tweets or whatever content you
+want for inspiration.
+So every funnel or landing page that's been captured on my app is in this library.
+So you can see it from from other people's funnel.
+So it's kind of cool to see what people have been adding to the library.
+Yeah.
+Yeah.
+So the way this works is there's a few ways to capture different landing pages.
+So you can capture it here and just type in a URL.
+So I don't know.
+Do you have a URL or website you want me to try to capture?
+Yeah.
+Let's do.
+Let's see.
+Let's analyze.
+I think Ali Abdul is a good one.
+Let's see what he's doing.
+I've checked out his funnels before.
+He's pretty good at this stuff.
+So I did his recently.
+So after you put in the URL, it'll give you this feedback.
+So it'll give you a summary of page summary and the marketing framework he uses.
+So this one on his landing pages, attention, interest, desire, action is like what Ada
+stands for.
+Give you a headline value prop and just breaks down the different sections as well.
+So the way that this app is doing this is we're using FireCrawl to crawl these websites
+and using OpenAI, ChatchipT API to output the results and analyzing, have a system prompt
+to be able to output all of these different sections and formats.
+So one other thing we do is we capture the screenshot as well.
+So if you ever use like bowl or lovable, one of the things that I recommend people to
+do is use a reference screenshot with your prompt too.
+So the other aspect of this app is to be able to use this to drop into like lovable bowl
+to be able to build a landing page with your own brand using that style.
+So that's something I've been doing with my other landing pages is just using my go to
+dribble.
+It's a really good website to find good style websites.
+I use that as a reference and then have a bowl or lovable build my front end base
+off of that.
+So my front end here is actually built that way.
+So it gives you a good starting point basically.
+OK, cool.
+So you've analyzed the landing page and you've got sort of like a breakdown and things
+like that.
+So if you want to go and create a landing page for your own product or service, you understand
+the structure, what the page is trying to accomplish.
+You know the sections that, you know, each of these landing pages have.
+So if you like the analysis, how can you use this effectively?
+Yeah, so I was able to add like a favorite series so you can favorite it and you can just
+click this user's template.
+And this will take you to a creation page.
+So I have this content generation section.
+And from here, if you don't have a brand, you can start a guided interview to be able
+to tell the app or chat to basically like what you're actually trying to build.
+So what this will see the interview questions be generated shortly.
+But I also have a brand's page as well.
+So you can see and save your own brand.
+So you don't have to do this step.
+Yep.
+You know, just a growth idea here too, you're probably already thinking of this.
+If you haven't done it already, but like, you know, as people input these landing pages
+to analyze, you could build like a, like a open library or something on your website.
+And you know, collect insights, give breakdowns, frameworks of successful landing pages, seems
+like a way that you could generate a lot of content to bring people into your funnel as
+well.
+Yeah, exactly.
+I think that's a really good idea.
+Cool.
+So you have some questions here and tell me about how you would utilize this.
+So basically you go through all these questions and jot them down down here.
+And this just basically, if you don't have a brand in this app, it will help you just
+build the brand.
+But one other thing we can do is just shortcut this and build your brand.
+So if you have your own website already, I started an agency.
+So I have this my own brand here.
+So it'll build out and fill out this information.
+So you can use this as a reference in this brand section, but if we go back, so say
+I want to actually use my brand that I saved and then create this from the brand, it'll
+give you a template to then drop into the lovable or bold and build this front end website with
+the screenshot that we generated earlier.
+So it kind of just combines a whole bunch of different systems and APIs into something
+you can then generate your own landing page from.
+So it kind of brings it full circle.
+I like this a lot because oftentimes when I'm going into a vibe coding platform, it helps
+to have a PRD or prompts already built out that I've done from my research and analysis.
+But sometimes I can get pretty disjointed.
+I'm hopping around between different tools and things of that nature.
+So I like that this is like a nice consolidated and structured process that clearly gives
+you a great framework to just go and take to your vibe coding tools.
+So you're saving time, you're probably saving money on tokens within the vibe coding
+platform.
+So you're getting closer to what you want to achieve faster.
+And then you can be confident that it's based off of successful frameworks and successful
+pages.
+I really like that concept.
+That's super cool.
+Yeah.
+So then like you can see this is the prompt that you would then just drop into whatever platform
+you want.
+Even cursor, but I found that bolt and lovable do a better job and cursor is more for
+like your specific edits and instead of just dropping this whole massive prompt in there.
+Yeah.
+Yeah.
+So how have you found the the output to be versus what you were doing prior to you know
+utilizing your your product?
+Are you getting a much better output in terms of like landing pages and things like that?
+Once you're coming in with with your prompt and in your information from the tool.
+Yeah.
+I feel like it gives you really good.
+The system together gives you really good landing page like the reference image and the
+prompt is really solid and basically shortcuts.
+The time you would take to have to do all this on your own.
+So I found that time is really valuable, especially because I work full time still.
+So like time for me is like such a valuable asset.
+I have to like make sure I optimize it.
+Absolutely.
+Cool.
+So you've got your landing page template.
+What would you do next in your process here in terms of either you know building or you
+know going deeper into a funnel?
+Yeah.
+So for me, the other thing I would do is optimize my email funnel.
+So we haven't gotten into the email portion yet to think that's something cool to show
+as well.
+So in the email funnel, one of the things I was able to do was generate custom emails for
+every user.
+So this just takes an email, have through mailgun and does a plus address with like the
+user's shortened user ID.
+And with this, we basically have an email inbox.
+So if you have a landing page already and now you want to start sending cold emails or
+just want to see how competitors might be framing their emails, this will give you a
+framework of the email breakdown.
+So we have an email that's analyzed here.
+This is from Russell Brunson.
+I'm not sure if you heard of one.
+Of course.
+Awesome marketer.
+But yeah, this is one of his emails.
+So our platform, this platform can actually tell you the contents and how he frames it
+in terms of like influence story, copy, psychology, template and insights as well.
+So one of the books you actually recommended was influence.
+So I kind of, I went through that in an audio book and I was like, I need to add that
+into this platform.
+So you can see from his email, like what different parts of that, the six things that influence
+his email campaign.
+So it's pretty cool.
+So you can see like social through authority and liking.
+So you can take some of this content and then generate your own email based off of it
+as well.
+And I'll show you that in a second.
+But you can see influence that story.
+So it gives you a story score as well and has an emotional journey of curiosity, pain,
+hope and desire.
+So it's like, even going through this, I'm still amazed that AI and like putting all
+these systems together can actually do this.
+It's, I mean, it's awesome.
+Yeah.
+You know, the other cool thing about what you're doing here is that you're looking at what
+makes people tick and what makes them buy from like a psychological perspective.
+So I noticed that, you know, on the landing page analysis, you had ADA, attention interest
+desire action, which is a proven sort of psychological framework here.
+You're looking at the content from, you know, the why, like what will make people buy
+and connect and things like that.
+So it's not like you're just like, hey, make landing pages fast or write emails fast.
+You're helping to extract what's making those things successful so that you can go and
+utilize those elements in your own way, which I think that's super cool because I think
+people are actually going to get great results from using this.
+Yeah.
+And it's cool too.
+Like I'll show you in a second.
+You can use this email as a template for your own brand as well.
+So it'll take the same structure, same style and build out email for you as well.
+I think it gets you about 80, 90% there.
+It takes some tweaking to make it in your own voice still, but it's still really solid.
+So it's kind of a cool feature that we have here too.
+Awesome.
+What's it?
+All right.
+So if we want to then use this one as a template.
+So just say we're using this framework.
+So you can kind of just remember like the subject line.
+It's basically saying that you're going to be wasting money.
+So it's like do this or you're going to lose money.
+So we're going to use this template.
+But email is a little bit faster.
+So we can go ahead and just generate this email from my brand.
+And we'll see what we get.
+But yeah, it's really cool.
+Just gives you a good reference point.
+And just even if you're doing like competitive analysis, it'll help you do competitive analysis
+as well.
+And I think I see people either adding their own landing pages or adding their competitive
+competitors emails as well.
+All right.
+So here is our subject line.
+Yeah.
+It has like your email.
+It's like a consideration stage.
+And it just says basically a really good email for using that template as a style too.
+Awesome.
+Awesome.
+Super helpful stuff here.
+I think a lot of people get blocked.
+They don't know where to start.
+Things like that.
+I think this is great for helping someone go from zero to one.
+Because a landing page and email funnel, like I'm always amazed as to how much you can
+build off of those two simple things.
+I mean, generating leads for like a consulting business or a service is a great way to sort
+of compound on that.
+If you have a digital product or something like that, all you really need is a landing page
+and an email follow up sequence.
+And you can do a ton with that.
+So I'm really glad to see that you're focusing on those foundational elements there.
+Yeah.
+Yeah.
+I see a lot of people struggling with that too.
+So it's like, I wanted to help myself and see if other people were interested in help
+them too.
+So I think it's pretty.
+I mean, that's the way to go, solve your own problem, scratch your own itch and, you know,
+as you get value from that, share with other people.
+And that's a formula right there for a successful business.
+So I think that's fantastic.
+Anything else in here that you want to show while we're getting the demo?
+Yeah.
+So like, I just want to show like the use it's already gotten right now.
+So we have, I think there's about 60 landing pages in here already.
+So it's kind of cool just to see like the different landing pages people have started
+to do and actually use to.
+So one of the things I have is, I recommend this if you're just trying to put content
+out there or just get more engagement is, I kind of put an incentive to get more credits
+by either following me or providing feedback or subscribing to my newsletter too.
+So I think that's actually worked pretty well.
+I'm just starting on X myself.
+So for me, I'm like, how do I give this out there for free, but also try to just see if
+I get more visibility too.
+So I think this credit system and people taking action to get credits is also a way to
+help me grow my brand and open up opportunities potentially.
+So it's kind of the way that's actually been like working pretty well.
+Yeah.
+You have a product led growth loop right here built into the product that you vibe coded.
+So you're right ahead of the game here.
+I love that.
+So you get a user and then they go through here.
+They want more credits and then you're going to get more people to follow you discover
+your product.
+So the cycle can just kind of repeat itself.
+Yeah.
+So yeah, it's pretty awesome.
+Awesome.
+Awesome.
+So what's your plan?
+What's the next step?
+Have you monetized this yet?
+Do you plan to?
+So I was not planning to monetize it because I wasn't expecting the feedback it's gotten.
+So now I've just been trying to reach out to beta users just to get feedback on what
+people are actually using it for.
+The landing page analysis is getting the most used by far.
+So just going through that and just seeing where there could be a market fit to actually
+provide value where people would charge for it.
+At this point, I was like, it's kind of just something I put together relatively fast.
+And there are some bugs here and there that I fixed, but I wasn't comfortable charging
+people yet.
+But if I'm able to provide value, find a use case where people actually would get a lot
+of benefit from it, then I will probably monetize it.
+For now, just I just want people to use it and see what we get on the the swipe page.
+So it's kind of cool.
+Cool.
+From my point of view, I think you have something really valuable here, you've validated it.
+I think people are signing up, they're using the product.
+I would, I face the same thing like when I've just kind of like built something, I'm like,
+I don't know if I want to like charge for this.
+I don't know if it's good enough yet.
+I need to get feedback and things of that nature.
+So that I resonate with that.
+But I feel like every time I've sort of just like started charging before I felt comfortable,
+it ended up working out.
+So yeah, think about that.
+I think that you could probably turn this into something pretty special.
+Okay.
+Yeah, definitely.
+I think for me, like adding swipe is just one step away and then being able to already
+have this the credit system in here, I was planning for future growth that ever happened.
+So now it might be time.
+Yeah.
+So your high level stack, you're using cursor and things like that, right?
+Yes.
+Yeah.
+Cool.
+Okay.
+So when you started by coding and by marketing, did you go right into cursor or was there
+sort of a step before that that you sort of learned how to like utilize these tools and
+stuff?
+So what's your learning path been like and what's your advice to people to kind of get
+up the speed and learn how to use these tools?
+Yeah.
+So my learning path is I wanted to know code platforms first, so that's make and add in.
+And what I was trying to do was automate lab processes.
+And I realized very quickly that it kind of went beyond the scope of those platforms.
+So I ended up going straight to cursor to build these automations and solutions.
+And it's funny.
+The way I got into it was there's a video on X of a little kid vibe coding a Harry Potter
+chat app.
+And for me, I was like, if a little kid can do it now, like, there's no barrier to entry
+for me.
+There's no excuse for me.
+So what I did first was I built, just try to see if I could build something.
+So I built a tweet generator that would tweet based off of marketing frameworks again to
+start building and posting on X. But then for me, I'm like, really want to learn the
+nitty gritty.
+So I went through just like a couple of your Demi courses to learn JavaScript React and
+both of those courses helped me to just build a base level for knowing enough where I can
+understand what the code is generating versus just trying to guess.
+So I think for me, like, learning the basics really helped to know when as kind of going
+off the rails and stop it and then being able to just kind of skim through the code faster
+and be able to make adjustments without just not knowing anything.
+So for me, like, the foundation was really important to like learn the basics of coding
+first before I just went straight to the vibe coding.
+Yeah.
+Yeah.
+So with your full-time job in the lab, how are you finding time to tinker and work on
+all this?
+Yeah, that's the hard part.
+So I wake up pretty early.
+We were talking, I think I wake up at five o'clock every day and at least give two hours
+to myself working on my own things before work every day and then the weekends obviously
+as well.
+But I still try to make time for like family and friends and everything.
+But when I was doing those courses, I was head down, just committed, and that's basically
+what was absorbing my life as just courses and just like, outputting and trying out
+vibe coding.
+Awesome.
+Awesome.
+Well, awesome stuff, Drew.
+You are very deserving of winning this first challenge.
+I think this is awesome and inspiring to the rest of the community.
+And yeah, congratulations on the win and looking forward to learning more from you in the
+community.
+Yeah.
+No, I appreciate it.
+You've put together something really special and it's cool just to see like many people
+just seeing the potential of AI and just applying it anywhere we can and just seeing
+what sticks.
+Yeah.
+I think I appreciate you bringing this together and yeah, so happy I won.
+It's crazy.
+Awesome, Drew.
+Thanks a lot and we'll have you back soon.
+All right.
+Appreciate it.
+All right.

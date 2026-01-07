@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decopon - Team Workshops They'll Actually Use Every Day | Austin Corporate Events</title>
+    <meta name="description" content="Japanese-style phone case decorating workshops for Austin corporate teams. A team experience they'll remember and use daily. Book your workshop today.">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Decopon - Team Workshops They'll Actually Remember">
+    <meta property="og:description" content="Custom phone case decorating for corporate teams in Austin. 90 minutes. Lasting memories.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="decopon_brand_kit/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="decopon_brand_kit/images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="decopon_brand_kit/images/favicon/apple-touch-icon.png">
+
+    <!-- AOS (Animate On Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Brand Fonts -->
+    <style>
+        @font-face {
+            font-family: 'Fredoka';
+            src: url('decopon_brand_kit/fonts/Fredoka,Montserrat/Fredoka/static/Fredoka-Regular.ttf') format('truetype');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'Fredoka';
+            src: url('decopon_brand_kit/fonts/Fredoka,Montserrat/Fredoka/static/Fredoka-Medium.ttf') format('truetype');
+            font-weight: 500;
+        }
+        @font-face {
+            font-family: 'Fredoka';
+            src: url('decopon_brand_kit/fonts/Fredoka,Montserrat/Fredoka/static/Fredoka-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+        }
+        @font-face {
+            font-family: 'Fredoka';
+            src: url('decopon_brand_kit/fonts/Fredoka,Montserrat/Fredoka/static/Fredoka-Bold.ttf') format('truetype');
+            font-weight: 700;
+        }
+    </style>
+
+    <!-- Quicksand Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fluid typography scale + Color scheme */
+        :root {
+            --font-xs: calc(0.75rem + 0.15vw);    /* ~12-14px */
+            --font-sm: calc(0.875rem + 0.2vw);    /* ~14-17px */
+            --font-base: calc(1rem + 0.25vw);     /* ~16-20px */
+            --font-md: calc(1.125rem + 0.35vw);   /* ~18-24px */
+            --font-lg: calc(1.5rem + 0.75vw);     /* ~24-36px */
+            --font-xl: calc(2rem + 1.5vw);        /* ~32-56px */
+            --font-2xl: calc(2.5rem + 2vw);       /* ~40-72px */
+            --font-hero: calc(2.5rem + 2.5vw);    /* ~40-80px */
+
+            /* Light mode colors (default) */
+            --bg-primary: #FFF8E8;
+            --bg-secondary: #FFFFFF;
+            --bg-tertiary: #f5f5f5;
+            --text-primary: #4A2417;
+            --text-secondary: #666;
+            --accent: #FFA85C;
+            --accent-dark: #FF9A47;
+
+            /* Font families */
+            --font-body: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            overflow-x: hidden;
+            font-size: var(--font-base);
+            transition: background 0.4s ease, color 0.4s ease;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER / LOGO */
+        header {
+            background: linear-gradient(to bottom,
+                rgba(255, 255, 255, 0.98) 0%,
+                rgba(255, 255, 255, 0.95) 50%,
+                rgba(255, 255, 255, 0.9) 80%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            padding: 20px 0 35px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 60px;
+            width: auto;
+        }
+
+        .header-cta {
+            background: linear-gradient(135deg, #FFA85C 0%, #FF9A47 100%);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.4s cubic-bezier(.165, .84, .44, 1), box-shadow 0.4s cubic-bezier(.165, .84, .44, 1);
+            box-shadow: 0 4px 15px rgba(255, 168, 92, 0.3);
+        }
+
+        .header-cta:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 12px 30px rgba(255, 168, 92, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .logo-container img {
+                height: 45px;
+            }
+
+            .header-cta {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #FFA85C 0%, #FF9A47 100%);
+            color: white;
+            padding: 120px 20px 100px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 90vh;
+        }
+
+        /* Video Background */
+        .hero-video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            filter: brightness(1.08) saturate(1.12);
+        }
+
+        /* Dark overlay for text readability */
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.05) 0%,
+                rgba(0, 0, 0, 0.15) 50%,
+                rgba(0, 0, 0, 0.25) 100%
+            );
+            z-index: 1;
+        }
+
+        /* Floating decorative elements - disabled when video is active */
+        .hero::before,
+        .hero::after {
+            display: none;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .hero .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .eyebrow {
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            opacity: 0.95;
+            font-weight: 600;
+            text-align: center;
+            width: 100%;
+        }
+
+        .hero h1 {
+            font-size: var(--font-hero);
+            margin-bottom: 25px;
+            font-weight: 700;
+            line-height: 1.1;
+            max-width: 900px;
+            text-align: center;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .subheadline {
+            font-size: var(--font-md);
+            margin-bottom: 20px;
+            opacity: 0.98;
+            max-width: 700px;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .eyebrow {
+            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .trust-signals {
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .trust-signals {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        .trust-signals span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+            cursor: default;
+        }
+
+        /* Tooltip styles */
+        .trust-signals span::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background: rgba(74, 36, 23, 0.95);
+            color: white;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 0.85em;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(.165, .84, .44, 1);
+            pointer-events: none;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .trust-signals span:hover::after {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* URGENCY BANNER */
+        .urgency-banner {
+            background: rgba(255,255,255,0.25);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.4);
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 0.95em;
+            font-weight: 600;
+            margin-bottom: 25px;
+            display: inline-block;
+            animation: pulse 2s ease-in-out infinite, shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        @keyframes shimmer {
+            0%, 100% { box-shadow: 0 0 20px rgba(255,255,255,0.3); }
+            50% { box-shadow: 0 0 30px rgba(255,255,255,0.5); }
+        }
+
+        /* GUARANTEE SECTION */
+        .guarantee-section {
+            background: var(--bg-primary);
+            padding: 80px 20px;
+            border-top: 3px solid var(--accent);
+            border-bottom: 3px solid var(--accent);
+            transition: background 0.4s ease;
+        }
+
+        .guarantee-section h2 {
+            font-size: var(--font-xl);
+            margin-bottom: 30px;
+            text-align: center;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .guarantee-box {
+            max-width: 700px;
+            margin: 30px auto;
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(255, 168, 92, 0.15);
+            border: 2px solid var(--accent);
+            text-align: center;
+            transition: transform 0.5s cubic-bezier(.165, .84, .44, 1), box-shadow 0.5s cubic-bezier(.165, .84, .44, 1), background 0.4s ease;
+        }
+
+        .guarantee-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(255, 168, 92, 0.3);
+        }
+
+        .guarantee-box h3 {
+            color: #FFA85C;
+            font-size: var(--font-lg);
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .guarantee-box p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* VIDEO SECTION */
+        .video-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 40px auto;
+            background: #000;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            transition: transform 0.5s cubic-bezier(.165, .84, .44, 1), box-shadow 0.5s cubic-bezier(.165, .84, .44, 1);
+        }
+
+        .video-container:hover {
+            transform: scale(1.03) translateY(-5px);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+        }
+
+        .video-container iframe,
+        .video-container video {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            display: block;
+        }
+
+        .video-placeholder {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2em;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* CTA BUTTON - Enhanced */
+        .cta-button {
+            background: white;
+            color: #4A2417;
+            padding: 18px 45px;
+            font-size: 1.15em;
+            font-weight: 700;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(.165, .84, .44, 1);
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(74, 36, 23, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 30px rgba(74, 36, 23, 0.35);
+            background: #FFF8E8;
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .cta-button.secondary:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-3px) scale(1.05);
+        }
+
+        /* CONTENT SECTIONS */
+        .section {
+            padding: 80px 20px;
+            background: var(--bg-secondary);
+            margin-bottom: 0;
+            transition: background 0.4s ease;
+        }
+
+        .section h2 {
+            font-size: var(--font-xl);
+            margin-bottom: 30px;
+            text-align: center;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .section h3 {
+            font-size: var(--font-lg);
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* PROBLEM-AGITATE SECTION */
+        .problem-section {
+            background: var(--bg-primary);
+            padding: 80px 20px;
+            transition: background 0.4s ease;
+        }
+
+        .problem-section h2 {
+            font-size: var(--font-xl);
+            margin-bottom: 30px;
+            text-align: center;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .problem-card {
+            background: var(--bg-secondary);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 2px 10px rgba(255, 168, 92, 0.1);
+            transition: transform 0.5s cubic-bezier(.165, .84, .44, 1), box-shadow 0.5s cubic-bezier(.165, .84, .44, 1), border-color 0.3s ease, background 0.4s ease;
+        }
+
+        .problem-card:hover {
+            transform: translateY(-10px) translateX(8px);
+            box-shadow: 0 20px 45px rgba(255, 168, 92, 0.25);
+            border-left-color: #FF9A47;
+        }
+
+        .problem-card h4 {
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .problem-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* VALUE STACK */
+        .value-stack {
+            background: linear-gradient(135deg, #FFA85C 0%, #FF9A47 100%);
+            color: white;
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-stack::before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+            top: -200px;
+            right: -200px;
+        }
+
+        .value-stack h2 {
+            color: white;
+            font-weight: 700;
+            text-align: center;
+            font-size: var(--font-xl);
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .value-items {
+            max-width: 700px;
+            margin: 40px auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .value-item {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+            text-align: center;
+            transition: transform 0.5s cubic-bezier(.165, .84, .44, 1), background 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .value-item:hover {
+            transform: translateX(15px) scale(1.02);
+            background: rgba(255,255,255,0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .value-item h4 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .value-item p {
+            opacity: 0.95;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .value-total {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .value-total .total-value {
+            font-size: var(--font-xl);
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .value-total .your-price {
+            font-size: var(--font-2xl);
+            font-weight: 800;
+            margin-top: 10px;
+        }
+
+        /* Counter animation class */
+        .counter {
+            display: inline-block;
+        }
+
+        /* HOW IT WORKS */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .step {
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            background: var(--bg-tertiary);
+            transition: transform 0.5s cubic-bezier(.165, .84, .44, 1), box-shadow 0.5s cubic-bezier(.165, .84, .44, 1), background 0.4s ease;
+        }
+
+        .step:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(255, 168, 92, 0.25);
+        }
+
+        .step-number {
+            font-size: var(--font-2xl);
+            font-weight: 700;
+            color: #FFA85C;
+            margin-bottom: 10px;
+            transition: transform 0.5s cubic-bezier(.165, .84, .44, 1);
+        }
+
+        .step:hover .step-number {
+            transform: scale(1.25) rotate(-5deg);
+        }
+
+        .step h3 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            color: var(--text-secondary);
+            font-size: 0.95em;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 1;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9em;
+            transition: transform 0.5s cubic-bezier(.165, .84, .44, 1), box-shadow 0.5s cubic-bezier(.165, .84, .44, 1);
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.08) rotate(2deg) translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+            z-index: 10;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials {
+            background: var(--bg-tertiary);
+            transition: background 0.4s ease;
+        }
+
+        .testimonial {
+            background: var(--bg-secondary);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent);
+            transition: transform 0.5s cubic-bezier(.165, .84, .44, 1), box-shadow 0.5s cubic-bezier(.165, .84, .44, 1), background 0.4s ease;
+        }
+
+        .testimonial:hover {
+            transform: translateX(15px) scale(1.01);
+            box-shadow: 0 15px 40px rgba(255, 168, 92, 0.2);
+        }
+
+        .testimonial p {
+            margin-bottom: 15px;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* PRICING */
+        .pricing-section {
+            background: var(--bg-secondary);
+            transition: background 0.4s ease;
+        }
+
+        .pricing-box {
+            background: var(--bg-tertiary);
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 20px;
+            border: 2px solid transparent;
+            transition: all 0.5s cubic-bezier(.165, .84, .44, 1);
+            position: relative;
+        }
+
+        .pricing-box:hover {
+            border-color: #FFA85C;
+            box-shadow: 0 25px 55px rgba(255, 168, 92, 0.3);
+            transform: translateY(-12px) scale(1.03);
+        }
+
+        /* Pricing reveal badge */
+        .pricing-box::before {
+            content: 'Most Popular';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%) scale(0.9);
+            background: linear-gradient(135deg, #FFA85C 0%, #FF9A47 100%);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: 600;
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(.165, .84, .44, 1);
+            box-shadow: 0 4px 15px rgba(255, 168, 92, 0.4);
+        }
+
+        .pricing-box:first-child:hover::before {
+            opacity: 1;
+            transform: translateX(-50%) scale(1);
+        }
+
+        .price {
+            font-size: var(--font-xl);
+            font-weight: 700;
+            color: #FFA85C;
+            margin-bottom: 10px;
+        }
+
+        .price-description {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            transition: transform 0.4s cubic-bezier(.165, .84, .44, 1);
+        }
+
+        .faq-item:hover {
+            transform: translateX(8px);
+        }
+
+        .faq-item h4 {
+            color: #FFA85C;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: color 0.3s ease, letter-spacing 0.4s cubic-bezier(.165, .84, .44, 1);
+        }
+
+        .faq-item:hover h4 {
+            color: #FF9A47;
+            letter-spacing: 0.5px;
+        }
+
+        .faq-item p {
+            color: var(--text-secondary);
+        }
+
+        /* EMAIL CAPTURE */
+        .booking-section {
+            background: linear-gradient(135deg, #FFA85C 0%, #FF9A47 100%);
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .booking-section::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+            bottom: -250px;
+            left: -250px;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .booking-section h2 {
+            color: white;
+            font-size: var(--font-xl);
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            font-weight: 700;
+        }
+
+        .booking-section p {
+            color: white;
+            font-size: var(--font-md);
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .email-form {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 40px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        .email-form h3 {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .form-group input[type="submit"] {
+            background: white;
+            color: #4A2417;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #FFFFFF;
+            color: var(--text-primary);
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        footer a {
+            color: #FFA85C;
+            text-decoration: none;
+            transition: color 0.3s ease, letter-spacing 0.4s cubic-bezier(.165, .84, .44, 1);
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #FF9A47;
+            letter-spacing: 0.5px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            :root {
+                --font-hero: calc(1.75rem + 2vw);
+                --font-xl: calc(1.5rem + 1vw);
+                --font-lg: calc(1.25rem + 0.5vw);
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Custom AOS animations */
+        [data-aos="fade-up-scale"] {
+            transform: translateY(50px) scale(0.95);
+            opacity: 0;
+            transition-property: transform, opacity;
+        }
+
+        [data-aos="fade-up-scale"].aos-animate {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+
+        [data-aos="slide-right"] {
+            transform: translateX(-50px);
+            opacity: 0;
+            transition-property: transform, opacity;
+        }
+
+        [data-aos="slide-right"].aos-animate {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        /* FLOATING KAWAII ELEMENTS */
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .floating-item {
+            position: absolute;
+            animation: floatAround 15s ease-in-out infinite;
+            opacity: 0.6;
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
+        }
+
+        .floating-item.mascot {
+            width: 80px;
+            height: auto;
+            opacity: 0.4;
+        }
+
+        .floating-item.emoji {
+            font-size: 2rem;
+            opacity: 0.5;
+        }
+
+        .floating-item:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; animation-duration: 12s; }
+        .floating-item:nth-child(2) { top: 20%; right: 8%; animation-delay: 2s; animation-duration: 14s; }
+        .floating-item:nth-child(3) { top: 60%; left: 3%; animation-delay: 4s; animation-duration: 16s; }
+        .floating-item:nth-child(4) { top: 70%; right: 5%; animation-delay: 1s; animation-duration: 13s; }
+        .floating-item:nth-child(5) { top: 40%; left: 8%; animation-delay: 3s; animation-duration: 15s; }
+        .floating-item:nth-child(6) { top: 85%; right: 10%; animation-delay: 5s; animation-duration: 11s; }
+        .floating-item:nth-child(7) { top: 5%; right: 15%; animation-delay: 2.5s; animation-duration: 17s; }
+        .floating-item:nth-child(8) { top: 50%; right: 3%; animation-delay: 1.5s; animation-duration: 14s; }
+
+        @keyframes floatAround {
+            0%, 100% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+            }
+            25% {
+                transform: translateY(-20px) translateX(10px) rotate(5deg);
+            }
+            50% {
+                transform: translateY(-10px) translateX(-5px) rotate(-3deg);
+            }
+            75% {
+                transform: translateY(-25px) translateX(15px) rotate(8deg);
+            }
+        }
+
+        /* PARALLAX SECTIONS */
+        .parallax-section {
+            position: relative;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax-layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .parallax-layer.slow {
+            transform: translateZ(-2px) scale(3);
+        }
+
+        .parallax-layer.medium {
+            transform: translateZ(-1px) scale(2);
+        }
+
+        /* Parallax background shapes */
+        .parallax-shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+
+        .parallax-shape.shape-1 {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #FFA85C, #FF9A47);
+            top: -100px;
+            left: -100px;
+        }
+
+        .parallax-shape.shape-2 {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #FF9A47, #FFA85C);
+            bottom: -50px;
+            right: -50px;
+        }
+
+        .parallax-shape.shape-3 {
+            width: 200px;
+            height: 200px;
+            background: #FFA85C;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Hide floating elements on mobile for performance */
+        @media (max-width: 768px) {
+            .floating-elements {
+                display: none;
+            }
+            .parallax-section {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="decopon_brand_kit/images/logos/logo-transparent.png" alt="Decopon Logo">
+            </div>
+            <a href="#booking" class="header-cta">Book a Workshop</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION WITH VIDEO BACKGROUND -->
+    <section class="hero">
+        <!-- Video Background -->
+        <video class="hero-video-bg" autoplay muted loop playsinline>
+            <source src="felt_deco/hero-video.mp4" type="video/mp4">
+        </video>
+
+        <!-- Overlay for text readability -->
+        <div class="hero-overlay"></div>
+
+        <div class="container">
+            <div class="urgency-banner" data-aos="fade-down" data-aos-duration="800">
+                ⏰ Limited January Spots: Only 3 workshops available this month
+            </div>
+
+            <div class="eyebrow" data-aos="fade-up" data-aos-delay="200">AUSTIN'S FIRST DECODEN WORKSHOP EXPERIENCE</div>
+
+            <h1 data-aos="fade-up" data-aos-delay="400">A Team Experience They'll <em>Actually</em> Remember</h1>
+
+            <p class="subheadline" data-aos="fade-up" data-aos-delay="600">Japanese-style phone case decorating workshops for Austin corporate teams. 90 minutes of creativity. Lasting memories in their hands.</p>
+
+            <div class="trust-signals" data-aos="fade-up" data-aos-delay="800">
+                <span data-tooltip="Cases, glue, 600+ charms, tools - everything">✓ All supplies included</span>
+                <span data-tooltip="Seriously - we guide you step by step">✓ No artistic skills required</span>
+                <span data-tooltip="Scales easily for any team size">✓ Perfect for 10-50 people</span>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="1000" style="margin-top: 40px;">
+                <a href="#booking" class="cta-button">Book a Discovery Call</a>
+                <a href="#how-it-works" class="cta-button secondary" style="margin-left: 15px;">See How It Works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEE IT IN ACTION - Real Workshop Video -->
+    <section class="section" style="background: var(--bg-secondary); padding: 80px 20px;">
+        <div class="container">
+            <h2 data-aos="fade-up" style="color: var(--accent);">See the Magic Happen</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 40px; color: #666;" data-aos="fade-up" data-aos-delay="100">
+                Watch how we transform plain phone cases into personalized keepsakes your team will treasure.
+            </p>
+
+            <div class="video-container" data-aos="zoom-in" data-aos-delay="200" style="max-width: 800px; margin: 0 auto;">
+                <!-- PLACEHOLDER - Replace with real workshop video -->
+                <div class="video-placeholder" style="aspect-ratio: 16/9; background: linear-gradient(135deg, #FFA85C 0%, #FF9A47 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 16px; color: white;">
+                    <span style="font-size: 3em; margin-bottom: 15px;">🎬</span>
+                    <span style="font-size: 1.2em; font-weight: 600;">Workshop Video Coming Soon</span>
+                    <small style="opacity: 0.9; margin-top: 10px;">Real footage of the decodening experience</small>
+                </div>
+
+                <!-- UNCOMMENT when you have the real video:
+                <video controls playsinline style="width: 100%; border-radius: 16px;">
+                    <source src="felt_deco/workshop-video.mp4" type="video/mp4">
+                </video>
+                -->
+
+                <!-- OR YouTube embed:
+                <iframe width="100%" height="450"
+                    src="https://www.youtube.com/embed/VIDEO_ID"
+                    title="Decopon Workshop Experience"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="border-radius: 16px;">
+                </iframe>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM-AGITATE SECTION -->
+    <section class="problem-section parallax-section">
+        <!-- Parallax background shapes -->
+        <div class="parallax-layer" data-parallax-speed="0.3">
+            <div class="parallax-shape shape-1"></div>
+            <div class="parallax-shape shape-2"></div>
+        </div>
+        <div class="container">
+            <h2 data-aos="fade-up">Most Team Activities Are <em>Forgettable</em></h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 20px; font-size: 1.1em; color: #666;" data-aos="fade-up" data-aos-delay="100">
+                Another escape room. Another paint night. Another TopGolf outing that costs $75/person and leaves nothing behind.
+            </p>
+
+            <div class="problems-grid">
+                <div class="problem-card" data-aos="fade-up" data-aos-delay="200">
+                    <h4>💸 Expensive, No Takeaway</h4>
+                    <p>You spend hundreds on team activities where people have fun for 90 minutes, then... nothing. No lasting memory. No daily reminder of the experience.</p>
+                </div>
+                <div class="problem-card" data-aos="fade-up" data-aos-delay="350">
+                    <h4>😴 Same Old Activities</h4>
+                    <p>Your team has done the bowling, the painting, the cooking class. They're looking for something fresh. Something Instagram-worthy. Something actually unique.</p>
+                </div>
+                <div class="problem-card" data-aos="fade-up" data-aos-delay="500">
+                    <h4>🎨 "I'm Not Creative"</h4>
+                    <p>Half your team won't engage because they think they're "not artistic." You need something fun that doesn't require talent, just willingness to try.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <h2 data-aos="fade-up">Here's What Makes This Different</h2>
+            <div class="steps">
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <h3>We Bring Everything</h3>
+                    <p>All supplies included: premium cases, whipped cream-textured glue, curated charms, and professional tools.</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="250">
+                    <div class="step-number">2</div>
+                    <h3>Your Team Creates</h3>
+                    <p>90 minutes of guided, hands-on creation. No experience needed. People laugh, bond, and make memories.</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">3</div>
+                    <h3>Everyone Leaves With a Keepsake</h3>
+                    <p>Custom cases they'll use daily for 1-2 years. That's daily brand impressions and conversation starters at every coffee shop, meeting, and happy hour.</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 40px; font-size: 1.1em; color: #666; max-width: 700px; margin-left: auto; margin-right: auto;" data-aos="fade-up" data-aos-delay="550">
+                At $75/person, you're investing in an experience that creates <strong>lasting value</strong>, not just a fleeting moment.
+            </p>
+        </div>
+    </section>
+
+    <!-- VALUE STACK SECTION -->
+    <section class="value-stack">
+        <div class="container">
+            <h2 data-aos="fade-up">What's Included in Every Workshop</h2>
+            <div class="value-items">
+                <div class="value-item" data-aos="slide-right" data-aos-delay="100">
+                    <h4>Premium Phone Cases (All Models)</h4>
+                    <p>Clear, protective cases for iPhone, Samsung, and more. We bring backups for every model so nobody's left out.</p>
+                </div>
+                <div class="value-item" data-aos="slide-right" data-aos-delay="200">
+                    <h4>Professional Whipped-Cream Glue</h4>
+                    <p>The signature texture that makes decoden cases so satisfying. Multiple colors, textures, and finishes to choose from.</p>
+                </div>
+                <div class="value-item" data-aos="slide-right" data-aos-delay="300">
+                    <h4>Curated Charm Collection</h4>
+                    <p>600+ charms per workshop: bows, pearls, holographic pieces, Sanrio characters, Y2K vibes, and more. Everyone finds something they love.</p>
+                </div>
+                <div class="value-item" data-aos="slide-right" data-aos-delay="400">
+                    <h4>Expert Facilitation & Support</h4>
+                    <p>I guide your team through the entire process, from demo to completion. No one gets stuck. Everyone succeeds.</p>
+                </div>
+                <div class="value-item" data-aos="slide-right" data-aos-delay="500">
+                    <h4>Setup, Cleanup & Photos</h4>
+                    <p>I arrive early, set everything up, and handle all cleanup. Plus: group photos and candid shots to share on social or your team Slack.</p>
+                </div>
+            </div>
+
+            <div class="value-total" data-aos="zoom-in" data-aos-delay="600">
+                <div>Total Value if Purchased Separately:</div>
+                <div class="total-value">$<span class="counter" data-target="1200">0</span>+</div>
+                <div style="font-size: 1.2em; margin: 15px 0;">Your Investment:</div>
+                <div class="your-price">$<span class="counter" data-target="750">0</span></div>
+                <div style="font-size: 1em; margin-top: 10px; opacity: 0.9;">for up to 10 people ($75/person)</div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;" data-aos="fade-up" data-aos-delay="700">
+                <a href="#booking" class="cta-button">Book Your Workshop</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" style="background: #f5f5f5;">
+        <div class="container">
+            <h2 data-aos="fade-up">See What Teams Create</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 30px; color: #666;" data-aos="fade-up" data-aos-delay="100">
+                Every workshop produces unique, Instagram-worthy results. Here's what your team will take home.
+            </p>
+            <div class="gallery">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="felt_deco/image-2a615214-772b-4f42-b0c5-ce2d4ae97d4e.png" alt="Decoden phone case with bears and decopons">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="felt_deco/image-e2b06b87-4aa4-49de-94b6-7f978257864f (1).png" alt="Decoden phone case with Cinnamoroll and flowers">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div style="padding: 20px; text-align: center;">
+                        📸<br><small>Workshop Action</small><br>
+                        <small style="opacity: 0.6;">Team creating together</small>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
+                    <div style="padding: 20px; text-align: center;">
+                        📸<br><small>Group Moment</small><br>
+                        <small style="opacity: 0.6;">Laughing & bonding</small>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div style="padding: 20px; text-align: center;">
+                        📸<br><small>Case Detail</small><br>
+                        <small style="opacity: 0.6;">Close-up texture</small>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
+                    <div style="padding: 20px; text-align: center;">
+                        📸<br><small>Team Results</small><br>
+                        <small style="opacity: 0.6;">Everyone's finished cases</small>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; font-style: italic; color: #999;" data-aos="fade-up">
+                More photos coming after first workshop events
+            </p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 data-aos="fade-up">What Austin Teams Are Saying</h2>
+
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="200" style="border-left-width: 5px;">
+                <p>"Your partnership helped create a space that was not only welcoming and healing, but also deeply meaningful for our staff. The care that went into every detail made the day one of reflection, connection, and renewal for our team. Our staff had the best time decorating their picture frames!"</p>
+                <div class="testimonial-author">- Jordan Lueker, Director of Operations<br><span style="font-weight: 400; font-size: 0.9em;">Asian Family Support Services of Austin (AFSSA)</span></div>
+            </div>
+
+            <!-- Placeholder for future testimonials - uncomment when you have more
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="350">
+                <p>"[Future testimonial]"</p>
+                <div class="testimonial-author">- Name, Title, Company</div>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section pricing-section">
+        <div class="container">
+            <h2 data-aos="fade-up"><em>Simple,</em> Transparent Pricing</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 30px; color: #666;" data-aos="fade-up" data-aos-delay="100">
+                No hidden fees. No surprises. Just a memorable experience for your team.
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 900px; margin: 0 auto;">
+                <div class="pricing-box" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Team Creative Session</h3>
+                    <div class="price">$750</div>
+                    <p class="price-description">for up to 10 people</p>
+                    <p><strong>Includes:</strong> All supplies, 90-min facilitation, setup & cleanup, group photos</p>
+                    <p style="margin-top: 15px; font-size: 0.9em; color: #999;">That's $75/person, less than TopGolf with something to keep forever</p>
+                </div>
+                <div class="pricing-box" data-aos="fade-up" data-aos-delay="350">
+                    <h3>Additional Guests</h3>
+                    <div class="price">$65</div>
+                    <p class="price-description">per person</p>
+                    <p><strong>Includes:</strong> Same full experience as main group</p>
+                    <p style="margin-top: 15px; font-size: 0.9em; color: #999;">Scale from 10 to 50 people easily</p>
+                </div>
+                <div class="pricing-box" data-aos="fade-up" data-aos-delay="500">
+                    <h3>Premium Add-On</h3>
+                    <div class="price">+$150</div>
+                    <p class="price-description">optional upgrade</p>
+                    <p><strong>Includes:</strong> Licensed character charms (Hello Kitty, Sanrio, anime characters)</p>
+                    <p style="margin-top: 15px; font-size: 0.9em; color: #999;">Perfect for teams who love kawaii culture</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;" data-aos="fade-up" data-aos-delay="600">
+                <a href="#booking" class="cta-button">Book a Discovery Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUARANTEE SECTION -->
+    <section class="guarantee-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Our Promise to You</h2>
+            <div class="guarantee-box" data-aos="zoom-in" data-aos-delay="200">
+                <h3>🛡️ 100% Satisfaction Guarantee</h3>
+                <p><strong>If your team doesn't love the experience, you don't pay.</strong></p>
+                <p>We're that confident in what we do. If within 30 minutes of starting the workshop you decide it's not working for your team, we'll pack up and leave. No charge, no questions asked.</p>
+                <p style="margin-bottom: 0; font-style: italic; color: #666; text-align: center;">We've never had to honor this guarantee. Your team will love it.</p>
+            </div>
+            <p style="text-align: center; max-width: 600px; margin: 30px auto 0; color: #666;" data-aos="fade-up" data-aos-delay="300">
+                Plus: Flexible rescheduling up to 48 hours before your event. Life happens. We get it.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <h2 data-aos="fade-up">Common Questions</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <h4>How long does the workshop take?</h4>
+                    <p>90 minutes total: 10-min intro/demo, 60 min of hands-on creation, 20 min for group photos and wrap-up. We can adjust timing if you need shorter or longer sessions.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <h4>What phone models do you support?</h4>
+                    <p>All current iPhone and Samsung models, plus Google Pixel, OnePlus, and most others. We collect phone models when you book and bring the right cases for everyone.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Do people need to be artistic or "crafty"?</h4>
+                    <p>Absolutely not. This isn't about art skills. It's about the experience. The "I'm not creative" people often end up having the most fun and making the best cases.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <h4>What do we need to provide?</h4>
+                    <p>Just a flat, clean workspace like a conference room, open area, or breakroom with tables. We bring all supplies, materials, tools, and handle setup and cleanup.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Can we host this at a restaurant, bar, or offsite venue?</h4>
+                    <p>Yes! As long as there's table space and it's okay with the venue. We've done workshops at coworking spaces, breweries, and private event spaces.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <h4>What if someone doesn't want to participate?</h4>
+                    <p>No pressure. Some folks prefer to watch and socialize. But in our experience, curiosity wins and almost everyone joins in once they see it happening.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <h4>How far in advance should we book?</h4>
+                    <p>Ideally 2-3 weeks to ensure we have the right supplies and cases. But if you're in a pinch, reach out. We'll do our best to accommodate rush requests.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="450">
+                    <h4>Do you offer private/bachelorette party packages?</h4>
+                    <p>Yes! We do bachelorette parties, birthdays, and girls' nights. Pricing starts at $500 for smaller groups. Let's chat about what you're envisioning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <h2 data-aos="fade-up">Ready to Book Your Workshop?</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Let's talk about your team, your goals, and how we can create an unforgettable experience.</p>
+
+            <div style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); border-radius: 12px; padding: 50px 30px; max-width: 600px; margin: 0 auto; text-align: center; position: relative; z-index: 1;" data-aos="zoom-in" data-aos-delay="200">
+                <p style="font-size: 1.1em; margin-bottom: 20px;">📧 Get in touch</p>
+                <p style="margin-bottom: 30px; opacity: 0.95;">Tell us about your team size, preferred dates, and any special requests.</p>
+
+                <a href="mailto:hello@decoponatx.com?subject=Workshop Inquiry" class="cta-button">Email Us to Book</a>
+                <p style="margin-top: 20px; font-size: 0.95em; opacity: 0.9;">
+                    <strong>hello@decoponatx.com</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p style="font-size: 1.3em; margin-bottom: 15px;"><strong>Decopon</strong></p>
+            <p style="margin-bottom: 15px;">
+                Japanese-style phone case decorating workshops for Austin teams.<br>
+                Creating lasting memories, one case at a time.
+            </p>
+            <p style="margin-bottom: 20px;">
+                <a href="mailto:hello@decoponatx.com">hello@decoponatx.com</a> |
+                <a href="tel:+15125551234">(512) XXX-XXXX</a>
+            </p>
+            <p style="margin-bottom: 15px;">
+                <a href="https://instagram.com/decoponatx" target="_blank">Instagram</a> |
+                <a href="https://tiktok.com/@decoponatx" target="_blank">TikTok</a>
+            </p>
+            <p style="margin-top: 20px; font-size: 0.85em; opacity: 0.7;">
+                &copy; 2025 Decopon. All rights reserved. |
+                <a href="#privacy">Privacy</a> |
+                <a href="#terms">Terms</a>
+            </p>
+            <p style="margin-top: 10px; font-size: 0.8em; opacity: 0.6;">
+                Based in Austin, Texas. Serving the greater Austin metro area.
+            </p>
+        </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Initialize AOS + Counter Animation -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50,
+            disable: 'mobile' // Disable on mobile for performance (optional - remove if you want animations on mobile)
+        });
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 100; // Lower = faster
+
+        const animateCounter = (counter) => {
+            const target = +counter.getAttribute('data-target');
+            const increment = target / speed;
+
+            const updateCount = () => {
+                const count = +counter.innerText;
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCount, 20);
+                } else {
+                    counter.innerText = target.toLocaleString();
+                }
+            };
+
+            updateCount();
+        };
+
+        // Intersection Observer for counters
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => {
+            counterObserver.observe(counter);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Track CTA clicks
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                console.log('CTA clicked:', this.textContent);
+            });
+        });
+
+        // Parallax Scrolling Effect
+        const parallaxLayers = document.querySelectorAll('[data-parallax-speed]');
+
+        function updateParallax() {
+            const scrolled = window.pageYOffset;
+
+            parallaxLayers.forEach(layer => {
+                const speed = parseFloat(layer.getAttribute('data-parallax-speed'));
+                const yPos = -(scrolled * speed);
+                layer.style.transform = `translateY(${yPos}px)`;
+            });
+        }
+
+        // Throttle scroll events for performance
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    updateParallax();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Mouse parallax for floating elements (subtle effect)
+        document.addEventListener('mousemove', (e) => {
+            const floatingElements = document.querySelectorAll('.floating-item');
+            const mouseX = e.clientX / window.innerWidth - 0.5;
+            const mouseY = e.clientY / window.innerHeight - 0.5;
+
+            floatingElements.forEach((el, index) => {
+                const depth = (index % 3 + 1) * 10; // Vary depth per element
+                const moveX = mouseX * depth;
+                const moveY = mouseY * depth;
+                el.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
