@@ -77,6 +77,83 @@
 
             /* Font families */
             --font-body: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+            /* NEW: Card border color */
+            --border-brown: #8B5A3C;
+
+            /* Alternate section colors */
+            --bg-cream: #FFFDF8;
+            --bg-warm-yellow: #FFF8E8;
+        }
+
+        /* TRUST BANNER - Pill Style */
+        .trust-banner-pill {
+            background: #FFFDF8;
+            border: 1.5px solid var(--border-brown);
+            border-radius: 50px;
+            padding: 16px 32px;
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            margin: 30px auto;
+        }
+
+        .trust-banner-pill span {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ICON CONTAINER */
+        .icon-box {
+            background: var(--bg-warm-yellow);
+            border: 1.5px solid var(--border-brown);
+            border-radius: 10px;
+            padding: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            margin-bottom: 15px;
+        }
+
+        .icon-box span {
+            font-size: 1.5em;
+        }
+
+        /* SPARKLE ACCENT - Radiating lines */
+        .sparkle-accent {
+            position: relative;
+        }
+
+        .sparkle-accent::before {
+            content: '✦';
+            position: absolute;
+            font-size: 1.2em;
+            color: var(--border-brown);
+            top: -12px;
+            right: -20px;
+            animation: sparkle-pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes sparkle-pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(0.9); }
+        }
+
+        /* Problem card icon box */
+        .problem-icon {
+            background: var(--bg-warm-yellow);
+            border: 1.5px solid var(--border-brown);
+            border-radius: 10px;
+            padding: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            margin-bottom: 12px;
+            font-size: 1.3em;
         }
 
         body {
@@ -128,20 +205,28 @@
         }
 
         .header-cta {
-            background: linear-gradient(135deg, #FFA85C 0%, #FF9A47 100%);
+            background: linear-gradient(180deg, #FFA85C 0%, #FF9540 100%);
             color: white;
             padding: 12px 28px;
             border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.95em;
-            transition: transform 0.4s cubic-bezier(.165, .84, .44, 1), box-shadow 0.4s cubic-bezier(.165, .84, .44, 1);
-            box-shadow: 0 4px 15px rgba(255, 168, 92, 0.3);
+            transition: all 0.15s ease;
+            box-shadow: 0 3px 0 #CC7030;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .header-cta::after {
+            content: '↗';
+            font-size: 0.9em;
         }
 
         .header-cta:hover {
-            transform: translateY(-4px) scale(1.03);
-            box-shadow: 0 12px 30px rgba(255, 168, 92, 0.5);
+            transform: translateY(2px);
+            box-shadow: 0 1px 0 #CC7030;
         }
 
         @media (max-width: 768px) {
@@ -346,18 +431,18 @@
         .guarantee-box {
             max-width: 700px;
             margin: 30px auto;
-            background: var(--bg-secondary);
+            background: #FFFDF8;
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(255, 168, 92, 0.15);
-            border: 2px solid var(--accent);
+            border-radius: 14px;
+            box-shadow: none;
+            border: 1.5px solid var(--border-brown);
             text-align: center;
-            transition: transform 0.5s cubic-bezier(.165, .84, .44, 1), box-shadow 0.5s cubic-bezier(.165, .84, .44, 1), background 0.4s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .guarantee-box:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 50px rgba(255, 168, 92, 0.3);
+            transform: translateY(-6px);
+            box-shadow: 0 8px 24px rgba(139, 90, 60, 0.15);
         }
 
         .guarantee-box h3 {
@@ -414,55 +499,60 @@
             padding: 20px;
         }
 
-        /* CTA BUTTON - Enhanced */
+        /* CTA BUTTON - 3D Effect */
         .cta-button {
-            background: white;
-            color: #4A2417;
-            padding: 18px 45px;
-            font-size: 1.15em;
+            background: linear-gradient(180deg, #FFA85C 0%, #FF9540 100%);
+            color: white;
+            padding: 16px 40px;
+            font-size: 1.1em;
             font-weight: 700;
             border: none;
             border-radius: 50px;
             cursor: pointer;
-            transition: all 0.4s cubic-bezier(.165, .84, .44, 1);
-            display: inline-block;
+            transition: all 0.15s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             margin-top: 20px;
             text-decoration: none;
-            box-shadow: 0 4px 15px rgba(74, 36, 23, 0.2);
+            box-shadow: 0 4px 0 #CC7030;
             position: relative;
-            overflow: hidden;
         }
 
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .cta-button:hover::before {
-            left: 100%;
+        .cta-button::after {
+            content: '↗';
+            font-size: 1.1em;
+            transition: transform 0.2s ease;
         }
 
         .cta-button:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 8px 30px rgba(74, 36, 23, 0.35);
-            background: #FFF8E8;
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #CC7030;
+        }
+
+        .cta-button:hover::after {
+            transform: translate(2px, -2px);
+        }
+
+        .cta-button:active {
+            transform: translateY(4px);
+            box-shadow: 0 0 0 #CC7030;
         }
 
         .cta-button.secondary {
             background: transparent;
             border: 2px solid white;
             color: white;
+            box-shadow: none;
+        }
+
+        .cta-button.secondary::after {
+            content: '↓';
         }
 
         .cta-button.secondary:hover {
             background: rgba(255,255,255,0.15);
-            transform: translateY(-3px) scale(1.05);
+            transform: translateY(0);
         }
 
         /* CONTENT SECTIONS */
@@ -514,18 +604,18 @@
         }
 
         .problem-card {
-            background: var(--bg-secondary);
+            background: #FFFDF8;
             padding: 30px;
-            border-radius: 12px;
-            border-left: 4px solid var(--accent);
-            box-shadow: 0 2px 10px rgba(255, 168, 92, 0.1);
-            transition: transform 0.5s cubic-bezier(.165, .84, .44, 1), box-shadow 0.5s cubic-bezier(.165, .84, .44, 1), border-color 0.3s ease, background 0.4s ease;
+            border-radius: 14px;
+            border: 1.5px solid var(--border-brown);
+            box-shadow: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
         }
 
         .problem-card:hover {
-            transform: translateY(-10px) translateX(8px);
-            box-shadow: 0 20px 45px rgba(255, 168, 92, 0.25);
-            border-left-color: #FF9A47;
+            transform: translateY(-6px);
+            box-shadow: 0 8px 24px rgba(139, 90, 60, 0.15);
         }
 
         .problem-card h4 {
@@ -645,26 +735,36 @@
         .step {
             text-align: center;
             padding: 30px;
-            border-radius: 12px;
-            background: var(--bg-tertiary);
-            transition: transform 0.5s cubic-bezier(.165, .84, .44, 1), box-shadow 0.5s cubic-bezier(.165, .84, .44, 1), background 0.4s ease;
+            border-radius: 14px;
+            background: #FFFDF8;
+            border: 1.5px solid var(--border-brown);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .step:hover {
-            transform: translateY(-12px) scale(1.02);
-            box-shadow: 0 20px 50px rgba(255, 168, 92, 0.25);
+            transform: translateY(-6px);
+            box-shadow: 0 8px 24px rgba(139, 90, 60, 0.15);
         }
 
         .step-number {
-            font-size: var(--font-2xl);
+            font-size: var(--font-xl);
             font-weight: 700;
-            color: #FFA85C;
-            margin-bottom: 10px;
-            transition: transform 0.5s cubic-bezier(.165, .84, .44, 1);
+            color: white;
+            margin-bottom: 15px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(180deg, #FFA85C 0%, #FF9540 100%);
+            border-radius: 50%;
+            box-shadow: 0 4px 0 #CC7030;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
         }
 
         .step:hover .step-number {
-            transform: scale(1.25) rotate(-5deg);
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #CC7030;
         }
 
         .step h3 {
@@ -718,17 +818,17 @@
         }
 
         .testimonial {
-            background: var(--bg-secondary);
+            background: #FFFDF8;
             padding: 30px;
-            border-radius: 12px;
+            border-radius: 14px;
             margin-bottom: 20px;
-            border-left: 4px solid var(--accent);
-            transition: transform 0.5s cubic-bezier(.165, .84, .44, 1), box-shadow 0.5s cubic-bezier(.165, .84, .44, 1), background 0.4s ease;
+            border: 1.5px solid var(--border-brown);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .testimonial:hover {
-            transform: translateX(15px) scale(1.01);
-            box-shadow: 0 15px 40px rgba(255, 168, 92, 0.2);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(139, 90, 60, 0.15);
         }
 
         .testimonial p {
@@ -749,20 +849,19 @@
         }
 
         .pricing-box {
-            background: var(--bg-tertiary);
+            background: #FFFDF8;
             padding: 40px;
-            border-radius: 16px;
+            border-radius: 14px;
             text-align: center;
             margin-bottom: 20px;
-            border: 2px solid transparent;
-            transition: all 0.5s cubic-bezier(.165, .84, .44, 1);
+            border: 1.5px solid var(--border-brown);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             position: relative;
         }
 
         .pricing-box:hover {
-            border-color: #FFA85C;
-            box-shadow: 0 25px 55px rgba(255, 168, 92, 0.3);
-            transform: translateY(-12px) scale(1.03);
+            transform: translateY(-6px);
+            box-shadow: 0 8px 24px rgba(139, 90, 60, 0.15);
         }
 
         /* Pricing reveal badge */
@@ -803,13 +902,16 @@
         /* FAQ */
         .faq-item {
             margin-bottom: 20px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
-            transition: transform 0.4s cubic-bezier(.165, .84, .44, 1);
+            background: #FFFDF8;
+            border: 1.5px solid var(--border-brown);
+            border-radius: 14px;
+            padding: 20px 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .faq-item:hover {
-            transform: translateX(8px);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(139, 90, 60, 0.12);
         }
 
         .faq-item h4 {
@@ -1149,8 +1251,16 @@
         </div>
     </section>
 
+    <!-- TRUST BANNER -->
+    <section style="background: var(--bg-warm-yellow); padding: 30px 20px; text-align: center;">
+        <div class="trust-banner-pill sparkle-accent">
+            <span>✓ Trusted by Austin Teams</span>
+            <a href="#testimonials" class="cta-button" style="margin: 0; padding: 10px 24px; font-size: 0.95em;">View Testimonials</a>
+        </div>
+    </section>
+
     <!-- SEE IT IN ACTION - Real Workshop Video -->
-    <section class="section" style="background: var(--bg-secondary); padding: 80px 20px;">
+    <section class="section" style="background: var(--bg-cream); padding: 80px 20px;">
         <div class="container">
             <h2 data-aos="fade-up" style="color: var(--accent);">See the Magic Happen</h2>
             <p style="text-align: center; max-width: 600px; margin: 0 auto 40px; color: #666;" data-aos="fade-up" data-aos-delay="100">
@@ -1175,20 +1285,16 @@
     <!-- OUR STORY - Founder Interview -->
     <section class="section" style="background: white; padding: 80px 20px;">
         <div class="container">
-            <h2 data-aos="fade-up" style="color: var(--accent);">Meet the Founders</h2>
+            <h2 data-aos="fade-up" style="color: var(--accent);">Meet the Founder</h2>
             <p style="text-align: center; max-width: 600px; margin: 0 auto 40px; color: #666;" data-aos="fade-up" data-aos-delay="100">
                 A mom and daughter business turning everyday items into one-of-a-kind kawaii masterpieces.
             </p>
 
-            <div data-aos="zoom-in" data-aos-delay="200" style="max-width: 500px; margin: 0 auto;">
-                <a href="https://www.instagram.com/p/DOyyiSuEcWY/" target="_blank" style="display: block; background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7); padding: 3px; border-radius: 16px; text-decoration: none;">
-                    <div style="background: white; border-radius: 14px; padding: 40px 30px; text-align: center;">
-                        <div style="font-size: 3em; margin-bottom: 15px;">📺</div>
-                        <h3 style="color: #333; margin-bottom: 10px; font-size: 1.3em;">Watch Our Story</h3>
-                        <p style="color: #666; margin-bottom: 20px; font-size: 0.95em;">Featured interview with Greater Austin Asian Chamber of Commerce</p>
-                        <span style="display: inline-block; background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7); color: white; padding: 12px 30px; border-radius: 25px; font-weight: 600;">Watch on Instagram →</span>
-                    </div>
-                </a>
+            <div data-aos="zoom-in" data-aos-delay="200" style="max-width: 400px; margin: 0 auto;">
+                <video controls playsinline style="width: 100%; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <source src="felt_deco/founders-interview.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
             <p style="text-align: center; margin-top: 30px; font-size: 0.95em; color: #888;" data-aos="fade-up" data-aos-delay="300">
@@ -1212,15 +1318,18 @@
 
             <div class="problems-grid">
                 <div class="problem-card" data-aos="fade-up" data-aos-delay="200">
-                    <h4>💸 Expensive, No Takeaway</h4>
+                    <div class="problem-icon">💸</div>
+                    <h4>Expensive, No Takeaway</h4>
                     <p>You spend hundreds on team activities where people have fun for 90 minutes, then... nothing. No lasting memory. No daily reminder of the experience.</p>
                 </div>
                 <div class="problem-card" data-aos="fade-up" data-aos-delay="350">
-                    <h4>😴 Same Old Activities</h4>
+                    <div class="problem-icon">😴</div>
+                    <h4>Same Old Activities</h4>
                     <p>Your team has done the bowling, the painting, the cooking class. They're looking for something fresh. Something Instagram-worthy. Something actually unique.</p>
                 </div>
                 <div class="problem-card" data-aos="fade-up" data-aos-delay="500">
-                    <h4>🎨 "I'm Not Creative"</h4>
+                    <div class="problem-icon">🎨</div>
+                    <h4>"I'm Not Creative"</h4>
                     <p>Half your team won't engage because they think they're "not artistic." You need something fun that doesn't require talent, just willingness to try.</p>
                 </div>
             </div>
@@ -1341,11 +1450,11 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="section testimonials">
+    <section class="section testimonials" id="testimonials">
         <div class="container">
             <h2 data-aos="fade-up">What Austin Teams Are Saying</h2>
 
-            <div class="testimonial" data-aos="fade-up" data-aos-delay="200" style="border-left-width: 5px;">
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
                 <p>"Your partnership helped create a space that was not only welcoming and healing, but also deeply meaningful for our staff. The care that went into every detail made the day one of reflection, connection, and renewal for our team. Our staff had the best time decorating their picture frames!"</p>
                 <div class="testimonial-author">- Jordan Lueker, Director of Operations<br><span style="font-weight: 400; font-size: 0.9em;">Asian Family Support Services of Austin (AFSSA)</span></div>
             </div>

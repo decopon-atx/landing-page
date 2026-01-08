@@ -56,10 +56,13 @@ A cozy needle-felted miniature world. Cute round felt fruit characters with tiny
 ```
 
 ### Pending Tasks
-1. [ ] Commit Instagram embed to git
-2. [ ] Get FTP credentials from Tricia
-3. [ ] Deploy to live site via FTP
-4. [ ] Test Instagram embed works on live site
+1. [x] Commit Instagram embed to git
+2. [x] Get FTP credentials from Tricia
+3. [x] Deploy to live site via FTP
+4. [x] Test Instagram embed works on live site
+5. [x] Downloaded Instagram video via instaloader (self-hosted)
+
+**All tasks complete! Site is live.**
 
 ### Page Flow (current)
 1. Hero (felt video background + text overlay)
